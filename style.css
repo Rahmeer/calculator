@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(218, 205, 205);
+}
+
+#container {
+  width: 1000px;
+  height: 550px;
+  margin: 20px auto;
+}
+
+#calculator {
+  width: 320px;
+  height: 520px;
+  background-color: coral;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#result {
+  height: 120px;
+}
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #000;
+}
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 40px;
+}
+#keyboard {
+  height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50px;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.number,
+.empty {
+  background-color: coral;
+}
+.operator,
+.number {
+  cursor: pointer;
+}
+
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
